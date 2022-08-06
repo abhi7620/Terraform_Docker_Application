@@ -26,7 +26,6 @@ chmod 400 ~/MasterKey.pem
 
 **** Ansible Ping Command ****
 ansible Ansible_Server -i DynamicInventory.py -m ping
-
 ansible Ansible_Server -i DynamicInventory.py -m ping --ssh-common-args='-o StrictHostKeyChecking=no' -u ubuntu --private-key=~/MasterKey.pem
-
+ansible-playbook  -i DynamicInventory.py site.yml -u ubuntu --private-key=~/MasterKey.pem 
 
