@@ -8,11 +8,11 @@ variable "subnets_cidr" {
   type    = list(string)
   default = ["172.0.0.0/25", "172.0.0.128/25"]
 }
-variable "ubuntuami" {
+variable "availability_zones" {
   type    = list(string)
-  default = ["ap-south-1a", "ap-south-1b"]
+  default = ["us-east-1a", "us-east-1a"]
 }
-variable "redhat_servers" {
+variable "ubuntuami" {
   default = "ami-0729e439b6769d6ab"
 }
 variable "key_name" {
