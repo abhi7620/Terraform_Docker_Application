@@ -24,8 +24,8 @@ vi ~/MasterKey.pem
 
 
 **** Ansible Ping Command ****
-ansible Kubernetes_Servers -i DynamicInventory.py -m ping
+ansible Ansible_Server -i DynamicInventory.py -m ping
 
-ansible Kubernetes_Servers -i DynamicInventory.py -m ping --ssh-common-args='-o StrictHostKeyChecking=no' -u ubuntu --private-key=~/MasterKey.pem
+ansible Ansible_Server -i DynamicInventory.py -m ping --ssh-common-args='-o StrictHostKeyChecking=no' -u ubuntu --private-key=~/MasterKey.pem
 
 
