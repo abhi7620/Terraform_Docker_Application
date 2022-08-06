@@ -21,6 +21,7 @@ pip3 install boto3 --user
 
 #Key name added
 vi ~/MasterKey.pem
+chmod 400 ~/MasterKey.pem
 
 
 **** Ansible Ping Command ****
