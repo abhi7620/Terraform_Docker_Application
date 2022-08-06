@@ -19,4 +19,13 @@ sudo alternatives --set python /usr/bin/python3
 pip3 install ansible --user
 pip3 install boto3 --user
 
+#Key name added
+vi ~/MasterKey.pem
+
+
+**** Ansible Ping Command ****
+ansible Kubernetes_Servers -i DynamicInventory.py -m ping
+
+ansible Kubernetes_Servers -i DynamicInventory.py -m ping --ssh-common-args='-o StrictHostKeyChecking=no' -u ubuntu --private-key=~/MasterKey.pem
+
 
